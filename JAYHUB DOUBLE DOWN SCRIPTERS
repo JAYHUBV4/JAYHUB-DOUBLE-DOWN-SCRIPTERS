@@ -1,0 +1,73 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+
+local Window = Library.CreateLib("JayHub Double Down", "DarkTheme")
+
+local Tab = Window:NewTab("Double Down 👇")
+
+local Section = Tab:NewSection("All the double down stuff")
+
+Section:NewLabel("JayHub")
+
+Section:NewButton("Block Drop", "Block Drop to middle", function()loadstring(game:HttpGet("https://raw.githubusercontent.com/Sw1ndlerScripts/RobloxScripts/main/Misc%20Scripts/DoubleDown.lua?raw=true"))()
+
+    print("Clicked")
+
+end)
+
+Section:NewButton("Sword Fight", "Fights For You", function()loadstring(game:HttpGet('https://raw.githubusercontent.com/yeerma/1/main/bot'))()
+
+    print("Clicked")
+
+end)
+
+Section:NewButton("Cup Game 🎯", "Finds The Right Cup", function()local Descendants = workspace:GetDescendants()
+
+for i, value in pairs(Descendants) do
+
+    if value.Name == "Important" then
+
+        local cups = value:GetDescendants()
+
+        for i, e in pairs (cups) do
+
+            if e.Name == "Detail" then
+
+            local v = e.Parent.Parent
+
+                v["1"].Detail.Transparency = 1
+
+                v["1"].Primary.Transparency = 1
+
+                v["3"].Detail.Transparency = 1
+
+                v["3"].Primary.Transparency = 1
+
+                v["5"].Detail.Transparency = 1
+
+                v["5"].Primary.Transparency = 1
+
+            end
+
+        end
+
+     end  
+
+end
+
+--Script made by Uwerz--
+
+    print("Clicked")
+
+end)
+
+Section:NewButton("Keyboard For Sword Fight Press X to use ⚔️", "Mobile Keyboard", function()loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+
+    print("Clicked")
+
+end)
+
+local Tab = Window:NewTab("Credits")
+
+local Section = Tab:NewSection("Made By JayHub")
+
+Section:NewLabel("JayHub")
